@@ -28,9 +28,9 @@ int main()
 	double availableCredit = maxCredit - creditused;
 
 
-	cout << fixed << setw(20)<< setprecision(2) << "Your max credit is " << maxCredit;
-	cout << fixed << setw(20) << setprecision(2) << "You have spent " << creditused;
-	cout << fixed << setw(20) << setprecision(2) << "You have " << availableCredit << " remaining";
+	cout << fixed << setw(20)<< setprecision(2) << "Your max credit is $" <<setw(10) <<right << maxCredit;
+	cout << fixed << setw(20) << setprecision(2) << "You have spent $" << creditused;
+	cout << fixed << setw(20) << setprecision(2) << "You have $" << availableCredit << " remaining";
 
 }
 
