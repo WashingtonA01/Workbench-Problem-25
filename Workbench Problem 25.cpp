@@ -21,15 +21,16 @@ int main()
 	double creditused;
 	
 	cout << "What is the maximum credit on your store card?" << endl;
-	cin >> maxCredit;
+	cin >>  maxCredit;
 	cout << "How much credit have you used already?" << endl;
 	cin >> creditused;
 
 	double availableCredit = maxCredit - creditused;
 
-	cout << "Your available credit is: " << availableCredit;
 
+	cout << fixed << setw(20)<< setprecision(2) << "Your max credit is " << maxCredit;
+	cout << fixed << setw(20) << setprecision(2) << "You have spent " << creditused;
+	cout << fixed << setw(20) << setprecision(2) << "You have " << availableCredit << " remaining";
 
-  
 }
 
